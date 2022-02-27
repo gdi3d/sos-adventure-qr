@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fd58f79c.css",
+    "main.js": "/static/js/main.f8290340.js",
+    "static/js/787.aebc87b1.chunk.js": "/static/js/787.aebc87b1.chunk.js",
+    "static/media/emergency-ambulance-svgrepo-com.svg": "/static/media/emergency-ambulance-svgrepo-com.9734f53d4d79212cf99b620ada096a9e.svg",
+    "index.html": "/index.html",
+    "main.fd58f79c.css.map": "/static/css/main.fd58f79c.css.map",
+    "main.f8290340.js.map": "/static/js/main.f8290340.js.map",
+    "787.aebc87b1.chunk.js.map": "/static/js/787.aebc87b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd58f79c.css",
+    "static/js/main.f8290340.js"
+  ]
+}
