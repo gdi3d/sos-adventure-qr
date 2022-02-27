@@ -1,6 +1,6 @@
 # S.O.S Adventure QR
 
-La aplicación funciona aqui: (https://gdi3d.github.io/sos-adventura-qr/)[https://gdi3d.github.io/sos-adventura-qr/]
+La aplicación funciona aqui: https://gdi3d.github.io/sos-adventura-qr/
 
 ## ¿Para que sirve?
 Genera un código QR que puedes llevar como colgante, pulsera, o pegatina para que los equipos de emergencia puedan acceder a tu información básica en caso de sufrir un accidente y quedar inconsciente.
