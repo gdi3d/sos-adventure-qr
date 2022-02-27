@@ -244,7 +244,17 @@ function App() {
     setQRCodeData(QRText);
   }
 
-  const imageSettings = {src: `${QRiconER}`, height:30, width:30, excavate:true}
+  const imageSettings = {src: `${QRiconER}`, height:115, width:115, excavate:true}
+
+  const downloadQR = () => {
+    const canvas = document.querySelector('.qr-container > canvas');
+    const pngFile = canvas.toDataURL("image/png");
+
+    const downloadLink = document.createElement("a");
+    downloadLink.download = "qrcode";
+    downloadLink.href = `${pngFile}`;
+    downloadLink.click();
+  }
 
   return (
     <main>
@@ -252,7 +262,7 @@ function App() {
       <div className="container">
         
         <div className="row">
-          <div className="col-md-9">
+          <div className="col-md-8 offset-md-2">
             <form action="">
               <FieldContext.Provider 
                 value={{ removeHandler: removeHandler, fieldOnChangeHandler:fieldOnChangeHandler, getComponentState: getComponentState  }} 
@@ -266,7 +276,7 @@ function App() {
         </div>
         
         <div className="row">
-          <div className="col-md-8 col-sm-12">
+          <div className="col-md-8 offset-md-2 col-sm-12">
             <h4>Selecciona la información que deseas incluir en el codigo QR</h4>
             <FieldButton clickHandler={ fullNameAddHandler } label="Datos Básicos" />
             <FieldButton clickHandler={ contactPersonAddHandler } label="Contactos de Emergencia" />  
@@ -280,22 +290,28 @@ function App() {
         </div>
         
         <div className="row">
-          <div className="col-12 text-center mt-5">
-            <h3 className="mb-5">Guarda e imprime esta imagen en una pegatina o en un colgante</h3>
-            <QRCode value={ QRCodeData } size="140" level="Q" imageSettings={ imageSettings } />
+          <div className="col-md-8 offset-md-2 mt-5">
+            <h4 className="mb-5">Descarga e imprime esta imagen en una pegatina o en un colgante</h4>
+          </div>
+        </div>
+
+        <div className="row mt-0">
+          <div className="col-md-4 offset-md-4 col-xs-12 text-center qr-container">
+            <QRCode value={ QRCodeData } style={{width: "100%"}} size="1024" level="Q" imageSettings={ imageSettings } />
           </div>
         </div>
 
         <div className="row">
-          <div className="col-12">
+          <div className="col-md-4 offset-md-4 col-xs-12 text-center">
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
-              <button type="button" className="btn btn-success btn-lg" onClick={e => showTranslation() }>QR en otro idioma</button>
+              <button type="button" className="btn btn-success btn-lg" onClick={e => downloadQR() }>Descargar QR</button>
+              <button type="button" className="btn btn-link btn-lg" onClick={e => showTranslation() }>QR en otro idioma</button>
             </div>
           </div>
         </div>
 
         <div className="row d-none" id="translate">
-          <div className="col-12 mt-5">
+          <div className="col-md-8 offset-md-2 mt-5">
             <textarea className="form-control" style={{height: 10+'em'}} value={QRTextTranslate} onChange={e => updateQR(e.target.value)}></textarea>
             <p>Esta es la información que se cargará en el QR. Puedes utilizar <a href={"https://translate.google.com/?sl=es&tl=en&text="+encodeURI(QRTextTranslate)+"&op=translate"} target="_blank" rel="noreferrer">Google Translate</a> para crear el QR en otro idioma y luego copia y pega la traducción aquí y el QR se actualizará</p>
           </div>
