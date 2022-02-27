@@ -282,7 +282,7 @@ function App() {
         <div className="row">
           <div className="col-12 text-center mt-5">
             <h3 className="mb-5">Guarda e imprime esta imagen en una pegatina o en un colgante</h3>
-            <QRCode value={ QRCodeData } size="175" level="Q" imageSettings={ imageSettings } />
+            <QRCode value={ QRCodeData } size="140" level="Q" imageSettings={ imageSettings } />
           </div>
         </div>
 
