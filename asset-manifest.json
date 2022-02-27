@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/sos-adventure-qr/static/css/main.0cdc3030.css",
-    "main.js": "/sos-adventure-qr/static/js/main.dab0fcac.js",
+    "main.js": "/sos-adventure-qr/static/js/main.18276aa6.js",
     "static/js/787.aebc87b1.chunk.js": "/sos-adventure-qr/static/js/787.aebc87b1.chunk.js",
     "static/media/emergency-ambulance-svgrepo-com.svg": "/sos-adventure-qr/static/media/emergency-ambulance-svgrepo-com.9734f53d4d79212cf99b620ada096a9e.svg",
     "index.html": "/sos-adventure-qr/index.html",
     "main.0cdc3030.css.map": "/sos-adventure-qr/static/css/main.0cdc3030.css.map",
-    "main.dab0fcac.js.map": "/sos-adventure-qr/static/js/main.dab0fcac.js.map",
+    "main.18276aa6.js.map": "/sos-adventure-qr/static/js/main.18276aa6.js.map",
     "787.aebc87b1.chunk.js.map": "/sos-adventure-qr/static/js/787.aebc87b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0cdc3030.css",
-    "static/js/main.dab0fcac.js"
+    "static/js/main.18276aa6.js"
   ]
 }
