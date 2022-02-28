@@ -313,7 +313,7 @@ function App() {
         <div className="row d-none" id="translate">
           <div className="col-md-8 offset-md-2 mt-5">
             <textarea className="form-control" style={{height: 10+'em'}} value={QRTextTranslate} onChange={e => updateQR(e.target.value)}></textarea>
-            <p>Esta es la información que se cargará en el QR. Puedes utilizar <a href={"https://translate.google.com/?sl=es&tl=en&text="+encodeURI(QRTextTranslate)+"&op=translate"} target="_blank" rel="noreferrer">Google Translate</a> para crear el QR en otro idioma y luego copia y pega la traducción aquí y el QR se actualizará</p>
+            <p>Esta es la información que se cargará en el QR. Puedes utilizar <a href={"https://translate.google.com/?sl=es&tl=en&text="+encodeURIComponent(QRTextTranslate)+"&op=translate"} target="_blank" rel="noreferrer">Google Translate</a> para crear el QR en otro idioma y luego copia y pega la traducción aquí y el QR se actualizará</p>
           </div>
         </div>
         
