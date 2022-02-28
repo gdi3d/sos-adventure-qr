@@ -19,6 +19,7 @@ const Faq = () => {
         <h3 className="mb-3">Privacidad</h3>
         <p>Esta aplicación no guarda ningún dato en ningún servidor y tampoco en tu dispositivo y es de <a href="https://github.com/gdi3d/sos-adventure-qr" target="_blank" rel="noreferrer">código abierto</a></p>
         <p><strong>ATENCIÓN:</strong> Si decides poner este codigo QR en tu mochila, casco, cuadro de bicicleta o cualquier otro lugar visible, recuerda que cualquiera podria escanear el código y obtener la información.</p>
+        <p><small>Creditos foto <a href="https://instagram.com/marekpiwnicki">Marek Piwnicki</a></small></p>
       </div>
     </div>
   )
